@@ -28,7 +28,6 @@ class binary_Tree:
         self.sayac2 = 0
         self.anahtar = anahtar
         if(self.sayac == self.size):
-            print("Daha yer yok!!")
             return
         self.sayac += 1   
         indeks = self.hashing1(anahtar)
@@ -131,7 +130,6 @@ class binary_Tree:
             if(self.liste[indeks] == silinecekEleman):
                 self.liste[indeks] = '*'
                 self.sayac -= 1
-                print("{} elemanı başarılı bir şekilde silindi..".format(silinecekEleman))
                 d = False
                 return True
                 break
@@ -158,7 +156,6 @@ class binary_Tree:
                     break
                     
         if(d):
-            print("Eleman bulunamadı!!!")
             return False
               
     
@@ -169,7 +166,6 @@ class binary_Tree:
         d = True
         while(self.liste[indeks] is not None):
             if(self.liste[indeks] == eleman):
-                print("{} elemanı tabloda bulunmaktadir..".format(eleman))
                 d = False
                 return True
                 break 
@@ -195,7 +191,6 @@ class binary_Tree:
                 if count >= self.size:
                     break
         if(d):
-            print("Eleman bulunamadı!!!") 
             return False
 
     def visualize(self):

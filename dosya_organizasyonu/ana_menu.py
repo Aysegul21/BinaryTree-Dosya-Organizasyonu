@@ -43,7 +43,6 @@ class ana_menu(QtWidgets.QDialog):
                 deger.setText(0, str(i))  # Adres sütunu
                 if(self.agac.liste[i] is not None):
                     deger.setText(1, str(self.agac.liste[i]))  # Adres sütunu
-            print("Eklenen eleman:", eleman)
             
 
     def eleman_ara(self):
